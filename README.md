@@ -1,4 +1,4 @@
-# Why unit testing
+# Why unit testing with angular.js
 
 - angular.js boilerplate
 - Use ES6 with babel
