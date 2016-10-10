@@ -32,3 +32,12 @@ npm i
 [ng-redux]: https://github.com/angular-redux/ng-redux
 [redux]: http://redux.js.org/
 [redux-saga]: http://yelouafi.github.io/redux-saga/
+
+## Ressources
+
+- [Testing Angular.js app headlessly with node.js + mocha](https://gist.github.com/rikukissa/dcb422eb3b464cc184ae)
+- [Hot Reload templates, controller and services in Angular1.X!!](https://github.com/honestica/angular-hot-reloader)
+- [Use webpack loaders with mocha](https://www.npmjs.com/package/mocha-webpack)
+- [Using Angular 2 Patterns in Angular 1.x Apps](https://egghead.io/courses/using-angular-2-patterns-in-angular-1-x-apps)
+- [Introduction to Angular Material](https://egghead.io/courses/angular-material-introduction)
+- [Angular and Webpack for Modular Applications](https://egghead.io/courses/angular-and-webpack-for-modular-applications)
