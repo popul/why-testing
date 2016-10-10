@@ -1,0 +1,19 @@
+<md-card>
+	<md-toolbar layout="row" class="md-hue-3">
+		<div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+			<span>Cat</span>
+			<md-button ng-click="$ctrl.fetchImage()">
+				<md-icon>refresh</md-icon>
+			</md-button>
+		</div>
+	</md-toolbar>
+	<div ng-show="!$ctrl.imgUrl"
+		ng-class="$ctrl.s.loading" 
+		layout="column" 
+		layout-align="center center">
+		<md-progress-circular md-diameter="96">
+		</md-progress-circular>
+		<div ng-class="$ctrl.s.loadingText">Loading ...</div>
+	</div>
+	<img ng-if="$ctrl.imgUrl" ng-src="{{$ctrl.imgUrl}}" alt="">
+</md-card>

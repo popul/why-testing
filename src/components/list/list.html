@@ -1,0 +1,21 @@
+<md-toolbar layout="row" class="md-hue-3">
+	<div class="md-toolbar-tools">
+		<span>List</span>
+	</div>
+</md-toolbar>
+
+<md-list style="padding-top:0">
+	<md-subheader>
+		<div ng-show="$ctrl.items.length > 0" ng-class="$ctrl.s.titleWithElements">
+			{{$ctrl.items.length}} elements
+		</div>
+		<div ng-show="!$ctrl.items.length">
+			Empty list
+		</div>
+	</md-subheader>
+	<item
+		ng-repeat="item in $ctrl.items track by $index" 
+		value="item"
+		index="$index">		
+	</item>
+</md-list>

@@ -1,0 +1,19 @@
+<md-card>
+	<md-toolbar layout="row" class="md-hue-3">
+		<div class="md-toolbar-tools">
+			<span>Counter</span>
+		</div>
+	</md-toolbar>
+
+	<md-card-content layout="row" layout-align="space-between center">
+		<div ng-class="$ctrl.s.counter">
+			<div id="counter">
+				{{ $ctrl.count }}			
+			</div>
+		</div>
+		<md-button ng-click='$ctrl.click()'>
+			<md-icon>add_box</md-icon>	
+			Add 100
+		</md-button>
+	</md-card-content>
+</md-card>

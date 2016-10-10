@@ -1,0 +1,11 @@
+<div ng-class="$ctrl.s.container">
+	<md-input-container class="md-block">
+		<label for="newItem">new item value</label>
+		<input id="newItem" ng-model="val" type="text" />
+		<md-button type="submit" ng-disabled="!val" ng-click="$ctrl.add(val)">
+			<md-icon>add</md-icon>
+			Add
+		</md-button>
+	</md-input-container>
+</div>
+

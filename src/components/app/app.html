@@ -1,0 +1,23 @@
+<md-toolbar layout="row" layout-align="center center">
+	<h1>{{ title }}</h1>
+</md-toolbar>
+
+<div 
+	ng-init="title='my app'" 
+	class="container" 
+	flex 
+	layout="column" 
+	layout-gt-sm="row">
+	<foo flex-gt-sm="20"></foo>	
+	<md-card flex style="min-width: 20em">
+		<list items="$ctrl.items"></list>
+		<div ng-show="!$ctrl.editMode">
+			<md-button ng-click="$ctrl.toggleEditMode()">
+				<md-icon>add_box</md-icon> Add new value
+			</md-button>
+		</div>
+		<edit ng-show="$ctrl.editMode"></edit>
+	</md-card>
+	<cat></cat>
+
+</div>
