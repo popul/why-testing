@@ -75,7 +75,9 @@
     "sourceMap": false,
     "instrument": false
   },
-  "ghooks": {
+  "config": {
+    "ghooks": {
       "pre-commit": "npm test"
+    }    
   }
 }
