@@ -42,3 +42,5 @@ npm i
 - [Using Angular 2 Patterns in Angular 1.x Apps](https://egghead.io/courses/using-angular-2-patterns-in-angular-1-x-apps)
 - [Introduction to Angular Material](https://egghead.io/courses/angular-material-introduction)
 - [Angular and Webpack for Modular Applications](https://egghead.io/courses/angular-and-webpack-for-modular-applications)
+- [Proper unit testing of Angular JS applications with ES6 module](https://blog.ngconsultant.io/proper-testing-of-angular-js-applications-with-es6-modules-8cf31113873f#.isb3zv7ra)
+
