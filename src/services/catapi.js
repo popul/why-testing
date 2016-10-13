@@ -1,6 +1,6 @@
 const fetchCATUrl = ($http) => () => {
 	return $http.get(
-		'http://thecatapi.com/api/images/get?api_key=MTI0ODgx&format=xml'
+		'//thecatapi.com/api/images/get?api_key=MTI0ODgx&format=xml'
 	)
 	.then(r => {
 		const parser = new DOMParser();
@@ -13,6 +13,6 @@ export default angular
 	.module('app.services.catAPI', [])
 	.factory('catAPI', function($http) {
 		"ngInject";
-		
+
 		return fetchCATUrl($http);
 	});
