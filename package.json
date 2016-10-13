@@ -7,12 +7,13 @@
     "test": "NODE_ENV=test mocha-webpack --webpack-config webpack.config.test.js --recursive 'src/**/*.test.js'",
     "test:junit": "npm test -- --reporter mocha-junit-reporter",
     "test:coverage:report": "nyc report --reporter=lcov",
-    "test:coverage": "nyc npm test && npm run test:coverage:report",
+    "test:coverage:start": "nyc npm test && npm run test:coverage:report",
     "test:coverage:serve": "browser-sync start -s 'coverage/lcov-report' -f 'coverage/lcov-report' --port 8082",
-    "test:coverage:open": " parallelshell 'npm run test:coverage:report:watch' 'npm run test:coverage:serve'",
-    "test:coverage:report:watch": "chokidar --initial 'src/**/*' -c 'npm run test:coverage'",
+    "test:coverage": " parallelshell 'npm run test:coverage:report:watch' 'npm run test:coverage:serve'",
+    "test:coverage:report:watch": "chokidar --initial 'src/**/*' -c 'npm run test:coverage:start'",
     "test:watch": "chokidar --initial 'src/**/*' -c 'npm test 2>/dev/null'",
-    "test:debug": "NODE_ENV=test_browser webpack-dev-server --config ./webpack.config.test.browser.js --inline",
+    "test:debug:start": "NODE_ENV=test_browser webpack-dev-server --config ./webpack.config.test.browser.js --inline",
+    "test:debug": "parallelshell 'npm run test:debug:start' 'opn http://localhost:8081'",
     "start": "webpack-dev-server --progress --colors --hot --host 0.0.0.0",
     "build": "rimraf dist && NODE_ENV=production webpack --progress --colors -p",
     "serve": "NODE_ENV=production webpack-dev-server --progress --colors -p --host 0.0.0.0"
@@ -45,6 +46,7 @@
     "ng-annotate-loader": "^0.2.0",
     "npm-install-webpack-plugin": "^4.0.4",
     "nyc": "^8.3.0",
+    "opn-cli": "^3.1.0",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.4",
     "script-loader": "^0.7.0",
@@ -78,6 +80,6 @@
   "config": {
     "ghooks": {
       "pre-commit": "npm test"
-    }    
+    }
   }
 }

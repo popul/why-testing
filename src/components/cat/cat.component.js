@@ -6,7 +6,7 @@ import template from './cat.html';
 import s from './styles.css';
 
 export class CatController {
-	constructor($ngRedux) {
+	constructor($ngRedux, $scope) {
 		this.s = s;
 
 		$ngRedux.connect(state=> {

@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - node_modules
+before_script:
+  - npm prune
+script:
+  - PUBLIC_PATH=/why-testing/ npm run build
+  - bash ./deploy-gh-pages.sh
+branches:
+  except:
+    - "/^v\\d+\\.\\d+\\.\\d+$/"

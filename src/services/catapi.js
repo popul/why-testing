@@ -10,7 +10,7 @@ const fetchCATUrl = ($http) => () => {
 }
 
 export default angular
-	.module('app.services', [])
+	.module('app.services.catAPI', [])
 	.factory('catAPI', function($http) {
 		return fetchCATUrl($http);
 	});
