@@ -1,6 +1,6 @@
 const trendingGif = ($http) => () => {
 	return $http.get(
-		'http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=100'
+		'//api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC&limit=100'
 	)
 	.then(r => {
 		const gif = r.data.data[Math.floor(Math.random()*100)];
@@ -10,7 +10,7 @@ const trendingGif = ($http) => () => {
 
 const randomGif = ($http) => (tags) => {
 	return $http.get(
-		`http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${tags}`
+		`//api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=${tags}`
 	)
 	.then(r => {
 		const gif = r.data.data;
