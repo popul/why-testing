@@ -46,6 +46,8 @@ export default angular
 		giphyAPI.name
 	])
 	.factory('sagas', function(catAPI, giphyAPI) {
+		"ngInject";
+		
 		return {
 			fetchCat: fetchCat(catAPI),
 			fetchTrendingGif: fetchTrendingGif(giphyAPI.trendingGif),

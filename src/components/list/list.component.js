@@ -5,6 +5,8 @@ import s from './styles.css';
 
 export class ListController {
 	constructor() {
+		"ngInject";
+		
 		this.s = s;
 	}
 

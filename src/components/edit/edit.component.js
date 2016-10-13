@@ -7,6 +7,8 @@ import s from './styles.css';
 
 export class EditController {
 	constructor($ngRedux, $scope) {
+		"ngInject";
+		
 		this.s = s;
 		$ngRedux.connect(null, actions)(this);
 

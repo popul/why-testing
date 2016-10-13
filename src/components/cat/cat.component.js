@@ -7,6 +7,8 @@ import s from './styles.css';
 
 export class CatController {
 	constructor($ngRedux, $scope) {
+		"ngInject";
+		
 		this.s = s;
 
 		$ngRedux.connect(state=> {

@@ -56,7 +56,8 @@ var config = {
     new NpmInstallPlugin(),
     new ExtractTextPlugin("styles.css"),
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.bundle.js')
-  ]
+  ],
+  devtool: 'source-map'
 };
 
 if (process.env.NODE_ENV !== "production") {

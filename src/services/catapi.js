@@ -12,5 +12,7 @@ const fetchCATUrl = ($http) => () => {
 export default angular
 	.module('app.services.catAPI', [])
 	.factory('catAPI', function($http) {
+		"ngInject";
+		
 		return fetchCATUrl($http);
 	});

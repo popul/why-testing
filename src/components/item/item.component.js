@@ -7,6 +7,8 @@ import s from './styles.css';
 
 export class ItemController {
 	constructor($ngRedux) {
+		"ngInject";
+		
 		$ngRedux.connect(null, actions)(this);
 	}
 

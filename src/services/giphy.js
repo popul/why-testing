@@ -21,6 +21,8 @@ const randomGif = ($http) => (tags) => {
 export default angular
 	.module('app.services.giphy', [])
 	.factory('giphyAPI', function($http) {
+		"ngInject";
+
 		return { 
 			trendingGif: trendingGif($http),
 			randomGif: randomGif($http)

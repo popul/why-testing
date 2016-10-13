@@ -3,7 +3,10 @@ import * as actions from '../../actions';
 
 export class AppController {
 	constructor($scope, $ngRedux) {
+		"ngInject"
+
 		this.scope = $scope;
+		
 		const unsubcribe = $ngRedux.connect(state => {
 			return {
 				items: state.items,
