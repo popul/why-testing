@@ -2,7 +2,7 @@ import 'angular';
 
 import appComponent from './app/app.component';
 import fooComponent from './foo/foo.component';
-import listComponent from './list/list.component';
+import listComponent from './list';
 import itemComponent from './item/item.component';
 import editComponent from './edit/edit.component';
 import catComponent from './cat/cat.component';

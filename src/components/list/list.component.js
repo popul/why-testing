@@ -1,9 +1,6 @@
-import 'angular';
-
-import template from './list.html';
 import s from './styles.css';
 
-export class ListController {
+export default class ListController {
 	constructor() {
 		"ngInject";
 		
@@ -13,14 +10,3 @@ export class ListController {
 	$onInit() {
 	}
 }
-
-export default angular
-	.module('app.list', [])
-	.component('list', {
-		bindings: {
-			items: '<'
-		},
-		template,
-		controller: ListController,
-	}
-);

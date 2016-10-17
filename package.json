@@ -47,6 +47,7 @@
     "npm-install-webpack-plugin": "^4.0.4",
     "nyc": "^8.3.0",
     "opn-cli": "^3.1.0",
+    "parallelshell": "^2.0.0",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.4",
     "script-loader": "^0.7.0",

@@ -1,7 +1,7 @@
 import chai, { assert, expect } from 'chai';
 import '../../../test-helpers';
 
-import './list.component';
+import './';
 
 describe('<list />', () => {
 	beforeEach(ngModule('app.list'));

@@ -5,3 +5,6 @@ coverage
 dist
 npm-debug.log
 .DS_Store
+yarn.lock
+test-results.xml
+*.bak
